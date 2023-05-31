@@ -12,8 +12,7 @@ Vagrant.configure("2") do |config|
 
 
     # network configuration
-    # WHY DOENST IT WORK?! config.vm.network "public_network", bridge: 'eth1', ip: "192.168.1.100"
-
+    config.vm.network "forwarded_port", guest: 80, host: 8080
 
 
 
